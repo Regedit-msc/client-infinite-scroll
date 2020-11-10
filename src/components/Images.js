@@ -38,7 +38,7 @@ export class Images extends Component {
           dataLength={this.state.images.length}
           next={this.fetchImages}
           hasMore={true}
-          loader={<h4>Loading...</h4>}
+          loader={<h4>Loading More Images...</h4>}
         >
           {this.state.images.map((image) => (
             <Image key={image.id} image={image} />
