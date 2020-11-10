@@ -23,7 +23,9 @@ export class Images extends Component {
     const { count, start } = this.state;
     this.setState({ start: this.state.start + count });
     axios
-      .get(`/api/photos?count=${count}&start=${start}`)
+      .get(
+        `https://regedit-infinite-scrolling.herokuapp.com/api/photos?count=${count}&start=${start}`
+      )
       .then((res) =>
         this.setState({ images: this.state.images.concat(res.data) })
       );
