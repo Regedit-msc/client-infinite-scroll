@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div id="root">
-        <div className="hero is-fullheight is-bold is-info">
+        <div className="hero is-fullheight is-bold is-success">
           <div className="hero-body">
             <div className="container">
               <div className="header content">
